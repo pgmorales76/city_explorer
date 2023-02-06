@@ -23,5 +23,3 @@
 ## WRRC
 
 ![Miro screenshot](/src/images/Screenshot%202023-02-05%20at%209.30.53%20PM.png "Miro Board")
-
-## Hello
