@@ -1,7 +1,7 @@
 import React from 'react';
 
 class Main extends React.Component {
-    render() {
+  render() {
         return (<p>Hello, World!!!</p>)
     }
 }
