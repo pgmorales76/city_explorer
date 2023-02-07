@@ -8,7 +8,7 @@
 
 //     return (
 //       <>
-//         {this.props.data.data.map((obj, idx) => 
+//         {this.props.data.data.map((obj, idx) =>
 //           <Card key={idx} style={{width: "10rem"}}>
 //             <Card.Header><Card.Title>{obj.valid_date}</Card.Title></Card.Header>
 //             <Card.Body>
