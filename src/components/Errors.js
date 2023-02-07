@@ -11,4 +11,4 @@ class Errors extends React.Component{
     }
 }
 
-export default Error;
+export default Errors;
