@@ -1,10 +1,15 @@
 import React from "react";
+import { Container, Form } from "react-bootstrap";
 
 class City_Search extends React.Component {
   render() {
     return (
       <>
-        <p>Search Form</p>
+        <Container>
+          <Form>
+            <Form.Control type="text" placeholder="Enter city . . . " />
+          </Form>
+        </Container>
       </>
     );
   }
