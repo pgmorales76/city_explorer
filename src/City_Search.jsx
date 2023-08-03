@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Form } from "react-bootstrap";
+import { Button, Container, Form } from "react-bootstrap";
 
 class City_Search extends React.Component {
   render() {
@@ -8,6 +8,7 @@ class City_Search extends React.Component {
         <Container>
           <Form>
             <Form.Control type="text" placeholder="Enter city . . . " />
+            <Button>Explore!</Button>
           </Form>
         </Container>
       </>
