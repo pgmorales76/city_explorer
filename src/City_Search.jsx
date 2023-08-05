@@ -29,8 +29,8 @@ class City_Search extends React.Component {
           )}
 
           {this.state.display_content &&
-            restaurant_data.map((element) => (
-              <div key={element.restaurant}>
+            restaurant_data.map((element, idx) => (
+              <div key={idx}>
                 <p>{element.restaurant}</p>
               </div>
             ))}
