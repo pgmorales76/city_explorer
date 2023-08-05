@@ -15,7 +15,7 @@ class City_Search extends React.Component {
         <Container>
           <Form>
             <Form.Control type="text" placeholder="Enter city . . . " />
-            <Button>Explore!</Button>
+            <Button onClick={() => this.setState({display_content: true})}>Explore!</Button>
           </Form>
         </Container>
       </>
