@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Container, Form } from "react-bootstrap";
+import city_map from "./assets/map.png";
 
 class City_Search extends React.Component {
   constructor(props) {
@@ -19,6 +20,8 @@ class City_Search extends React.Component {
           </Form>
 
           {this.state.display_content ? <p>Hello, World!</p> : null }
+          {this.state.display_content && <p>Hello, World 2.0!</p>}
+          {this.state.display_content && <img src={city_map} alt="map of Seattle" width={200}/>}
 
         </Container>
       </>
