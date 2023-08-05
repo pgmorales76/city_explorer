@@ -27,6 +27,13 @@ class City_Search extends React.Component {
           {this.state.display_content && (
             <img src={city_map} alt="map of Seattle" width={500} />
           )}
+
+          {this.state.display_content &&
+            restaurant_data.map((element) => (
+              <div key={element.restaurant}>
+                <p>{element.restaurant}</p>
+              </div>
+            ))}
         </Container>
       </>
     );
