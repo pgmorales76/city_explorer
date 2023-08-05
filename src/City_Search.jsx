@@ -32,6 +32,9 @@ class City_Search extends React.Component {
             restaurant_data.map((element, idx) => (
               <div key={idx}>
                 <p>{element.restaurant}</p>
+                <p>
+                  Serves: {element.cuisines} food at {element.locality}{" "}
+                </p>
               </div>
             ))}
         </Container>
