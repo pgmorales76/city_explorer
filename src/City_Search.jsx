@@ -10,17 +10,22 @@ class City_Search extends React.Component {
     };
   }
 
+  handle_search = (e) => {
+    e.preventDefault();
+    
+  }
+
   render() {
     return (
       <>
         <Container>
-          <Form>
+          <Form onSubmit={this.handle_search}>
             <Form.Control
               onChange={(e) => this.setState({ search_query: e.target.value })}
               type="text"
               placeholder="Enter city . . . "
             />
-            <Button onClick={() => this.setState({ display_content: true })}>
+            <Button type="submit">
               Explore!
             </Button>
           </Form>
