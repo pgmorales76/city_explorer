@@ -6,6 +6,7 @@ class City_Search extends React.Component {
     super(props);
     this.state = {
       display_content: false,
+      search_query: "",
     };
   }
 
@@ -14,12 +15,15 @@ class City_Search extends React.Component {
       <>
         <Container>
           <Form>
-            <Form.Control type="text" placeholder="Enter city . . . " />
+            <Form.Control
+              onChange={(e) => this.setState({ search_query: e.target.value })}
+              type="text"
+              placeholder="Enter city . . . "
+            />
             <Button onClick={() => this.setState({ display_content: true })}>
               Explore!
             </Button>
           </Form>
-
         </Container>
       </>
     );
