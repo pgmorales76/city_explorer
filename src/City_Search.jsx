@@ -1,7 +1,5 @@
 import React from "react";
 import { Button, Container, Form } from "react-bootstrap";
-import city_map from "./assets/map.png";
-import restaurant_data from "./restaurants.json";
 
 class City_Search extends React.Component {
   constructor(props) {
