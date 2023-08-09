@@ -8,16 +8,21 @@ class City_Search extends React.Component {
     this.state = {
       display_content: false,
       search_query: "",
+      city: {},
     };
   }
 
   handle_search = async (e) => {
     e.preventDefault();
-    let url = `https://us1.locationiq.com/v1/search?key=${import.meta.env.VITE_LOCATIONIQ_KEY}&q=${this.state.search_query}&format=json`;
+    let url = `https://us1.locationiq.com/v1/search?key=${
+      import.meta.env.VITE_LOCATIONIQ_KEY
+    }&q=${this.state.search_query}&format=json`;
     // console.log(url);
     const response = await axios.get(url);
     console.log(response.data);
-  }
+
+    this.setState({ city: response.data[0], display_content: true });
+  };
 
   render() {
     return (
@@ -29,9 +34,7 @@ class City_Search extends React.Component {
               type="text"
               placeholder="Enter city . . . "
             />
-            <Button type="submit">
-              Explore!
-            </Button>
+            <Button type="submit">Explore!</Button>
           </Form>
         </Container>
       </>
