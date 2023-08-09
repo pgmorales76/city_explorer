@@ -11,12 +11,12 @@ class City_Search extends React.Component {
     };
   }
 
-  handle_search = (e) => {
+  handle_search = async (e) => {
     e.preventDefault();
     let url = `https://us1.locationiq.com/v1/search?key=${import.meta.env.VITE_LOCATIONIQ_KEY}&q=${this.state.search_query}&format=json`;
-    console.log(url);
-    const response = axios.get(url);
-    console.log(response);
+    // console.log(url);
+    const response = await axios.get(url);
+    console.log(response.data);
   }
 
   render() {
