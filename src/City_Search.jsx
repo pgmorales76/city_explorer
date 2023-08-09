@@ -36,6 +36,15 @@ class City_Search extends React.Component {
             />
             <Button type="submit">Explore!</Button>
           </Form>
+
+          {this.state.display_content && (
+            <>
+              <p>{this.state.city.display_name}</p>
+              <p>
+                Latitude: {this.state.city.lat}, Longitude:{this.state.city.lon}
+              </p>
+            </>
+          )}
         </Container>
       </>
     );
