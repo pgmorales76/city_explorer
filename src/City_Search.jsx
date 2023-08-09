@@ -13,9 +13,10 @@ class City_Search extends React.Component {
 
   handle_search = (e) => {
     e.preventDefault();
-    let url = `https://us1.locationiq.com/v1/search?key=${}&q=${this.state.search_query}&format=json`;
-    const response = axios.get();
-
+    let url = `https://us1.locationiq.com/v1/search?key=${import.meta.env.VITE_LOCATIONIQ_KEY}&q=${this.state.search_query}&format=json`;
+    console.log(url);
+    const response = axios.get(url);
+    console.log(response);
   }
 
   render() {
